@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To the Moon!</title>
+<style>
+body {
+  background: lightblue;
+}
+</style>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+</head>
+
+<!--*************************************************************************** -->
+
+<body>
+	<center>
+	<section class="hero is-link">
+  		<div class="hero-body">
+    		<p class="title">
+      			To the Moon!
+    		</p>
+    		<p class="subtitle">
+      			The exponential, volatile growth game!
+    		</p>
+
+  		</div>
+	</section>
+	</center>
+
+	<br><br>
+
+	<section class = "section">	
+	<div class="columns">	
+	<div class="column is-three-fifths is-offset-one-fifth">
+	<div class="card">
+	  	<header class="card-header">
+	    	<p class="card-header-title is-centered">
+	     	 	To the Moon!
+	   		</p>
+	  	</header>	
+
+	  	<div class="card-content">
+	  	<div class="content">
+			<button id="howToPlay" class="button is-info is-rounded">How do I play?</button> 
+			<div id="writtenRules">
+				<br>
+				<p class="is-size-4">
+					How to play: Bet an amount of points and confirm this value by pressing the <strong>'BET'</strong> button. This will take from your total amount immediately. After betting, hit the <strong>'START'</strong> button to start the game. <br> When the game starts, the multiplyer will start to go up until it will eventually crash at a random value. Use the <strong>'CASH OUT'</strong> button to earn your rewards before the game crashes! If you fail to cash out before it crashes, you lose your betted points. Have fun!
+				</p>
+			</div>
+			<h1> Points: <span id = "playerPoints">100</span></h1>
+
+			<label class="is-size-4 ">Number of points to bet (minimum value of 1, max of 1000): </label> 
+			<input class="input is-medium" type="number" id="pointsBetted" min= 1 max = 1000 value = 0>
+			<br>
+
+			<center>
+				<br><br>
+ 				<h1><span id="crashMultiplier">1.00</span>x - Current multiplier</h1>
+ 				<div  class="is-size-5" id="bailedText">You bailed at: <span id="bailedMultiplier">1.00</span>x and won <span id="wonPoints">0</span> points </div>
+
+ 				<div class="is-size-5" id="crashed">The multiplier crashed at <span id="finalCrashValue">1.00</span>x</div>
+ 				<div class="is-size-5" id="lostText">Looks like you didn't cash out in time, better luck next time!</div>
+ 			</center>
+ 		</div>
+ 		</div>
+ 		<footer class="card-footer">
+			<button id="betButton" class="is-danger button card-footer-item"><strong>BET</strong></button>
+ 			<button id="startButton" class="is-primary button card-footer-item"><strong>START</strong></button>
+			<button id="cashOutButton" class="is-success button card-footer-item"><strong>CASH OUT</strong></button>
+		</footer>
+ 	</div>
+ 	</div>
+ 	</div> 	
+	</section>
+
+ 	<!--No idea why but unless these are here, the background colour wont work-->
+ 	<br><br><br><br><br><br>
+<script type="text/javascript" src ="Hackathon_Project.js"></script>
+
+</body>
+</html>
